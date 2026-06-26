@@ -26,8 +26,8 @@ This dataset was generated for Imperial College London's Professional Certificat
 
 Each function was queried once a week, following evaluation of the available data up to that point. The coordinate of each query was determined by the code related to that phase of the strategy. 
 
--- Phase 1: Queries were the most isolated point within a bound search space. The space was bound by regions of promise - and SVM-derived decision boundary, distance from a peak or samples in the upper quartile of outputs
--- Phase 2: Queries were a Neural Networks approximation of maximum values  
+<br> -- Phase 1: Queries were the most isolated point within a bound search space. The space was bound by regions of promise - and SVM-derived decision boundary, distance from a peak or samples in the upper quartile of outputs
+<br> -- Phase 2: Queries were a Neural Networks approximation of maximum values  
 
 ## Preprocessing and uses
 
