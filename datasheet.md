@@ -5,13 +5,13 @@ This dataset was generated for Imperial College London's Professional Certificat
 ## Composition
  There are 8 different datasets within corresponding to 8 different functions (F1, F2, ..., F8)
  - The datasets for each function are composed of initially provided data points, and the queries requested during the project. These are distinguish with a binary "new_point" channel in the dataframe when loading the data.
-    -- original datasets are store in their original .npy format and parsed into a dataframe using the data_loading library
-    -- new data points are stored as weekly .csv files in the results folder and parsed into the dataframe using the data_loading library
+    <br>-- original datasets are store in their original .npy format and parsed into a dataframe using the data_loading library
+    <br>-- new data points are stored as weekly .csv files in the results folder and parsed into the dataframe using the data_loading library
  - data is stored as floating point numbers to 6 decimal places
 
 
-|Data Table| 
-| Function | Dimensions | Number of Points | Max Value | Min Value 
+| Data Table                                                           |
+| Function | Dimensions | Number of Points | Max Value | Min Value     |
 |----------|-----------|---------------|---------------|---------------|
 | F1       | 2D        | 20            | 0.037891      | -0.006092     |
 | F2       | 2D        | 20            | 0.666604      | -0.132547     |
