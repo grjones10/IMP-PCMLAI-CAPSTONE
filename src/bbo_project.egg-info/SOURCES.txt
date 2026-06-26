@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/bbo_project/__init__.py
+src/bbo_project/data_loading.py
+src/bbo_project.egg-info/PKG-INFO
+src/bbo_project.egg-info/SOURCES.txt
+src/bbo_project.egg-info/dependency_links.txt
+src/bbo_project.egg-info/top_level.txt
