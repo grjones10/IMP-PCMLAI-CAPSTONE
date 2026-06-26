@@ -9,7 +9,6 @@ This dataset was generated for Imperial College London's Professional Certificat
     <br> -- new data points are stored as weekly .csv files in the results folder and parsed into the dataframe using the data_loading library
  - data is stored as floating point numbers to 6 decimal places
 
-
 | Data Table                                                           |
 | Function | Dimensions | Number of Points | Max Value | Min Value     |
 |----------|-----------|---------------|---------------|---------------|
