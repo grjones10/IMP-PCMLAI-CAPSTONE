@@ -69,6 +69,7 @@ Phase 2 makes use of the sampling achieved in Phase 1 to fit a Neural Network an
 
 ## Repository Structure
 
+```
 bbo_project/
 ├── .gitignore
 ├── pyproject.toml
@@ -82,7 +83,7 @@ bbo_project/
 │   ├── initial_data/
 │   │   └── function_1/
 │   │       ├── initial_inputs.npy
-│   │       ├── initial_output.npy
+│   │       └── initial_output.npy
 │   │
 │   └── updated_data/
 │       ├── new_data_points_wk1.csv
@@ -97,10 +98,13 @@ bbo_project/
 │   └── ...
 │
 ├── notebooks/
-│   └── main_week1.ipynb
+│   └── phase11.ipynb
 │
 └── src/
     ├── __init__.py
     ├── data_loading.py
     ├── data_augmentation.py
     └── data_plotting.py
+```
+
+
