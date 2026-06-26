@@ -1,6 +1,6 @@
 ## Section 1: Project Overview
 
-This Black-Box Optimisation project has the overall aim of finding the maximum of 8 different functions. The functions are unknown, and of varying dimensions. An initial set of data is provided and beyond that the functions are evaluated a further 10 times. The output of each evaluation is returned and learned from with each iteration.
+This Black-Box Optimisation project has the overall aim of finding the maximum of 8 different functions. The functions are unknown, and of varying dimensions. An initial set of data is provided and beyond that the functions are evaluated a further 13 times. The output of each evaluation is returned and learned from with each iteration.
 
 Such a process is reverent to the real-world where obtaining additional information about a particular phenomenon in industry or research comes at a cost and only a finite amount of experiments can therefore be carried out. To best model this phenomenon, the parameters of those experiments must be chosen wisely.
 
@@ -34,7 +34,7 @@ To evaluate the function with an updated datapoint, each week a query is submitt
 
 Function 1: 0.550501-0.050001
 
-There is a constraint of only being able to submit 10 updated queries, so these must be chosen wisely. The response to the function evaluation is a discrete floating point number value which corresponds to the unknown function’s actual value at the location of evaluation.
+There is a constraint of only being able to submit 13 updated queries, so these must be chosen wisely. The response to the function evaluation is a discrete floating point number value which corresponds to the unknown function’s actual value at the location of evaluation.
 
 ## Section 3: Challenge Objectives
 
@@ -47,31 +47,34 @@ For example:
 
 ## Section 4: Technical Approach
 
-The main principal of the first few weeks of the project it is better populate the sample space before trying to models.
+The project has been split into 2 fundamental phases:
 
-1. Week 1
-This first week takes a purely explorative approach by looking for the most isolated point within the input domain and choosing that as the coordinate of the next point 
+    **Phase 1**: Space Filling – weeks 1 - 10
+
+The aim of Phase 1 is not to find the maximum value but to try and better sample the space – particularly in the vicinity of a promising region. The point chosen for the next function evaluation is the most isolated point within a bound search space 
+
 -- A convex hull is calculated to find the bounds of the inputs space
--- Random sampling is used to efficiently fill the multi-dimensional space
+-- Random sampling is used to efficiently fill the multi-dimensional convex hull space
 -- The random sample with the largest Euclidian distance to any of the input data point is chosen as the next point
 
-2. Week 2
+Exploration and Exploitation are balanced by points that define the convex hull. Initially the convex hull is drawn around all samples (exploring whole domain). As more information became available, the search space was bound by promising regions. This region to was defined with either SVM-derived decision boundary, the distance from a peak, or the points within the upper quartile of output values (exploiting information). 
 
-This week takes a more balanced approach to exploration-exploitation, with a bias to exploration. Unlike week 1, I considered the output-input relationship. I still explore the sample space by looking for a "most isolated point", but this time I manually define a bounding box for that search based on observations from the input-output relationships
--- functionality was added to scatter the output "Y" as a function of each input variable independently 
--- where clear trends were present, I used the bounding box to exclude regions of the domain where a maximum looked highly unlikely 
+    **Phase 2**: Maximisation – weeks 11 – 13
 
-3. Week 3
+Phase 2 makes use of the sampling achieved in Phase 1 to fit a Neural Network and predict the maximum values
 
-This extends the boundary box approach from week 2. Rather than manually specifying a bounding box from inspection of the input-output scatter, this code classifies the data with a binary "promising" channel.  
--- Data points with an output in the upper quartile of values are given a "promising" value of 1, others are 0 
--- A convex hull is then drawn around the subset of points defined as being "promising" 
--- This convex hull is then searched for the most-isolated point as in week 1, but the search region is now concentrated around points that appear to be close to the maximum
+-- current maximum is found, and all points within a pre-defined distance from that point are extracted
+-- Neural Network (NN) is trained on the data set described above 
+-- The trained NN is provided with random samples of the domain and returns the coordinates with the maximum output value
+
+## Repository Structure
 
 bbo_project/
 ├── .gitignore
 ├── pyproject.toml
 ├── README.md
+├── DATASHEET.md
+├── MODEL_CARD.md
 ├── requirements.txt
 ├── .venv/
 │

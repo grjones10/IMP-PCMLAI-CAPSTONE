@@ -488,7 +488,7 @@ def extract_distance_from_max(df, variable, input_cols, min_points):
         
     return region_of_interest
 
-def seed_convex_hull(points, hull, n_samples=1000000, seed=42):
+def seed_convex_hull(points, hull, n_samples=10000000, seed=42):
 
     from scipy.spatial import Delaunay
 
