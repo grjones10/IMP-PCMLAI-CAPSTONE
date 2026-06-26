@@ -49,7 +49,7 @@ For example:
 
 The project has been split into 2 fundamental phases:
 
-    **Phase 1**: Space Filling – weeks 1 - 10
+    **Phase 1** : Space Filling – weeks 1 - 10
 
 The aim of Phase 1 is not to find the maximum value but to try and better sample the space – particularly in the vicinity of a promising region. The point chosen for the next function evaluation is the most isolated point within a bound search space 
 
@@ -59,7 +59,7 @@ The aim of Phase 1 is not to find the maximum value but to try and better sample
 
 Exploration and Exploitation are balanced by points that define the convex hull. Initially the convex hull is drawn around all samples (exploring whole domain). As more information became available, the search space was bound by promising regions. This region to was defined with either SVM-derived decision boundary, the distance from a peak, or the points within the upper quartile of output values (exploiting information). 
 
-    **Phase 2**: Maximisation – weeks 11 – 13
+    **Phase 2** : Maximisation – weeks 11 – 13
 
 Phase 2 makes use of the sampling achieved in Phase 1 to fit a Neural Network and predict the maximum values
 

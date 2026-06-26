@@ -1,9 +1,8 @@
-## Motivation: why did you create this data set? What task does it support?
+## Motivation
 
 This dataset was generated for Imperial College London's Professional Certificate in Machine Learning and AI Capstone Project. This was a Black-box Optimisation task, where the objective is obtaining a model that approximates unknown functions and return their maximum value. To achieve an acceptable model approximation, the dataset focuses largely on improving sampling around regions of promise rather than finding the maximum value. Only the last 3 data points for each function were focused on finding the maximum - i.e. evaluating the trained model   
 
-## Composition: what does it contain? What is the size and format and are there any gaps?
-
+## Composition
  There are 8 different datasets within corresponding to 8 different functions (F1, F2, ..., F8)
  - The datasets for each function are composed of initially provided data points, and the queries requested during the project. These are distinguish with a binary "new_point" channel in the dataframe when loading the data.
     -- original datasets are store in their original .npy format and parsed into a dataframe using the data_loading library
@@ -23,18 +22,18 @@ This dataset was generated for Imperial College London's Professional Certificat
 | F7       | 6D        | 39            | 1.869530      | 0.002701      |  
 | F8       | 8D        | 50            | 9.833484      | 5.592193      | 
 
-## Collection process: how were the queries generated? What strategy did you use? Over what time frame?
+## Collection process
 
 Each function was queried once a week, following evaluation of the available data up to that point. The coordinate of each query was determined by the code related to that phase of the strategy. 
 
 -- Phase 1: Queries were the most isolated point within a bound search space. The space was bound by regions of promise - and SVM-derived decision boundary, distance from a peak or samples in the upper quartile of outputs
 -- Phase 2: Queries were a Neural Networks approximation of maximum values  
 
-## Preprocessing and uses: have you applied any transformations? What are the intended and inappropriate uses?
+## Preprocessing and uses
 
 Outputs were scaled to be within 0 - 1, and where absolute values are less than 1e-6, they are considered 0 owing to the 6 decimal place precision. 
 
-## Distribution and maintenance: where is the data set available? What are the terms of use? Who maintains it?
+## Distribution and maintenance
 
 - all data is available within this repository. For repository structure, see README.md
 - Data was generated over the duration of the capstone project (Q2 2026). It was maintained by the owner of the repository - Gareth Jones
