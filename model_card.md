@@ -1,7 +1,7 @@
 ## Overview
 
 __Model Name__: Combined Space-Filling and Function Approximation Optimisation<br>
-__Type__: Black-Box Optimisation Workflow enabling both sapce-filling sampling and surrogate modelling<br>
+__Type__: Black-Box Optimisation Workflow enabling both space-filling sampling and surrogate modelling<br>
 __Version__: 1.13<br>
 
 ## Intended use
@@ -19,7 +19,15 @@ The project has been split into 2 fundamental phases:
 
 __Phase 1__: Space Filling
 - __Aim__: Improving sampling of the space<br>
+This phase spanned most of the project and did not aim to find the function's maximum. Rather, it was focused on building the foundations for __phase 2__ by improving the sampling in the region of promise. This was initially very exploratiative <br>
+
+    1. determine the bounds of the search space
+    2. Calculate the convex hull of those bounds 
+    3. Use latin hypercube sampling with 1e6 random seeds to sample the whole domain, extract points internal to the convex hull
+    4. Find the internal point with the largest distance to all current data points - the __most isolated point__
+
 - This phase contains 3x different approaches to bounding the search space for the next query - the __most isolated point__
+
 
 __Phase 2__: Function Maximisation
 - __Aim__: make use of the sampling achieved in Phase 1 to fit a Neural Network and predict the maximum values
@@ -36,6 +44,7 @@ __Phase 2__: Function Maximisation
 __Phase 1__ (Week 1 - Week 10): Space Filling<br>
 
 Summary of Performance:
+
 
 Metrics Used:<br>
     - Current Maximum Value<br>
