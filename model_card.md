@@ -29,9 +29,6 @@ __Aim__: Improving sampling of the space<br>
 | 3.            | Use latin hypercube sampling with 1e6 random seeds to sample the whole domain, extract points internal to the convex hull |
 | 4.            | Find the internal point with the largest distance to all current data points - the __most isolated point__                |
 
-- This phase contains 3x different approaches to bounding the search space for the next query - the __most isolated point__
-
-
 #### __Phase 2__: Function Maximisation
 __Aim__: make use of the sampling achieved in Phase 1 to fit a Neural Network (NN) and predict the maximum values<br>
 
