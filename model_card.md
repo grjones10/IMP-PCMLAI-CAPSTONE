@@ -83,9 +83,9 @@ Bounding the initial search space with the convex hull of the initial data set b
 
 ##### Limitations__
 
-__Peak within initial data bounds assumption___ <br>
- As mentioned above, the assumption of the peak lying within the initial dataset is a limitation - and found to be false during the project. 
-__NN training data__
+__Peak within initial data bounds assumption__ <br>
+ As mentioned above, the assumption of the peak lying within the initial dataset is a limitation - and found to be false during the project<br>
+__NN training data__<br>
  <br>the availability of the training data used for the neural network is very limited. Despite efforts in phase 1 to improve this, the high-dimensional domains remain very coarsely sampled. This limits the accuracy, and generality, of the model used to predict the maximum
 
 ### Ethical considerations
