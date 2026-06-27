@@ -84,7 +84,7 @@ These new data points are appended to a function’s initial dataframe by the ap
 
 The output of the code are the coordinates of the next desired function evaluation. To evaluate the function with an updated data point, each week a query is submitted to the capstone dashboard as coordinates to 6 decimal places. 
 
-An example of a submission to function 1 is shown below:
+An example of a submission to function 1 is shown below:<br>
 -- Function 1: 0.550501-0.050001
 
 There is a constraint of only being able to submit 13 updated queries, so these must be chosen wisely. The response to the function evaluation is a discrete floating point number value which corresponds to the unknown function’s actual value at the location of evaluation.
@@ -95,8 +95,7 @@ __Objective__: Maximise each of the unknown functions
 
 This objective is constrained by a maximum 13 updated queries per function, and a response delay while each new query is processed. Furthermore - beyond the number of dimensions - nothing is known about the function’s structure. 
 
-For example:
-
+For example:<br>
 -- Is the maximum within the bounds of the initial data set or not? 
 -- Is there more than one local maxima? 
 
@@ -104,8 +103,8 @@ For example:
 
 The project has been split into 2 fundamental phases:
 
-__Phase 1__ (Week 1 - Week 10): Space Filling
-    <br>__Aim__: Improving sampling of the space – particularly in the vicinity of a promising region. 
+__Phase 1__ (Week 1 - Week 10): Space Filling<br>
+    __Aim__: Improving sampling of the space – particularly in the vicinity of a promising region. 
     
 The point chosen for the next function evaluation is the most isolated point within a bound search space
     -- Not attempt to maximise the function at this stage
@@ -117,8 +116,8 @@ The point chosen for the next function evaluation is the most isolated point wit
 
 Exploration and Exploitation are balanced by points that define the convex hull. Initially the convex hull is drawn around all samples (exploring whole domain). As more information became available, the search space was bound by promising regions. This region to was defined with either SVM-derived decision boundary, the distance from a peak, or the points within the upper quartile of output values (exploiting information). 
 
-__Phase 2__ (Week 11 - Week 13): Function Maximisation
-    <br>__Aim__: make use of the sampling achieved in Phase 1 to fit a Neural Network and predict the maximum values
+__Phase 2__ (Week 11 - Week 13): Function Maximisation<br>
+_Aim__: make use of the sampling achieved in Phase 1 to fit a Neural Network and predict the maximum values
 
 - current maximum is found, and all points within a pre-defined distance from that point are extracted
 - Neural Network (NN) is trained on the data set described above 
