@@ -23,6 +23,7 @@ This phase spanned most of the project and did not aim to find the function's ma
 
 __Aim__: Improving sampling of the space<br>
 __Workflow__:<br>
+
     1. determine the bounds of the search space
     2. Calculate the convex hull of those bounds 
     3. Use latin hypercube sampling with 1e6 random seeds to sample the whole domain, extract points internal to the convex hull
