@@ -18,8 +18,8 @@ __Unsuitable__
 #### __Phase 1__: Space Filling
 __Aim__: Improving sampling of the space<br>
 
-- This phase spanned most of the project and did not aim to find the function's maximum. Rather, it was focused on building the foundations for __phase 2__ by improving the sampling in the region of promise. 
-- Initially very exploratiative, with the convex hull defined around all available data points
+- This phase spanned most of the project and did not aim to find the function's maximum. Rather, it was focused on building the foundations for __phase 2__ by improving the sampling in the region of promise 
+- Initially very explorative, with the convex hull defined around all available data points
 - The approach to bounding the search space, and the exploration-exploitation balance, evolved as patterns began to appear in the data
 
 | __Workflow__  |                                                                                                                           | 
@@ -32,7 +32,8 @@ __Aim__: Improving sampling of the space<br>
 #### __Phase 2__: Function Maximisation
 __Aim__: make use of the sampling achieved in Phase 1 to fit a Neural Network (NN) and predict the maximum values<br>
 
-This phase spanned the final stages was focused making use of the sampling achieved in __phase 1__ to train a neural network on the promising points and find the maximum value of the underlying function 
+- This phase spanned the final stages was focused making use of the sampling achieved in __phase 1__ to train a neural network on the promising points and find the maximum value of the underlying function
+- Since the aim was to find the maximum, only data in the vicinity of the region of promise was used in training. The rational being that the loss function would then focus on accuracy in the region that was important 
 
 | __Workflow__  |                                                                                                               | 
 |---------------|---------------------------------------------------------------------------------------------------------------|
@@ -40,7 +41,6 @@ This phase spanned the final stages was focused making use of the sampling achie
 | 2.            | Define a search radius around that current maximum and extract all points within                              |
 | 3.            | Train an NN on the extracted data points                                                                      |
 | 4.            | Provide the NN with 1e6 random samples of search radius and out the maximum model-approximated function value |
-
 
 #### __Summary__
 
