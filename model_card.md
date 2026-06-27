@@ -15,6 +15,13 @@ __Unsuitable__
 
 ## Details: 
 
+| Project Phase | Objective             | Weeks | Approach  |
+|---------------|-----------------------|-------|-----------|
+| 1.1           | Space Filling         | Y1    |           |
+| 1.2           | Space Filling         | Y1    |           |
+| 1.3           | Space Filling         | Y1    |           |
+| 2.1           | Function Maximisation | Y1    |           |
+
 ### Performance
 
 __Phase 1__ (Week 1 - Week 10): Space Filling<br>
