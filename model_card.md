@@ -6,12 +6,12 @@ __Version__: 1.13<br>
 
 ## Intended use
 
-This codebase is intended for a 
+- This codebase is intended for a use as a space-filling algorithm and simple function evaluator. 
+- The codebase within is easily manipulated making it suitable for educational purposes or benchmark testing
 
 __Unsuitable__
-
-- ?
-- ?
+- Not for use in real-world decision making
+- Safety-critical scenarios 
 
 ## Details: Project is been split into 2 phases
 
@@ -57,6 +57,7 @@ __Phase 1__ (Week 1 - Week 10): Space Filling<br>
 
 Summary of Performance:
 
+- Sampling 
 
 Metrics Used:<br>
     - Current Maximum Value<br>
@@ -66,6 +67,8 @@ Metrics Used:<br>
 __Phase 2__ (Week 11 - Week 13): Function Maximisation<br>
 
 Summary of Performance:
+
+- 
 
 Metrics Used:<br>
     - Current Maximum Value<br>
