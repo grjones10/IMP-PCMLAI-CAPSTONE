@@ -107,7 +107,7 @@ __Phase 1__ (Week 1 - Week 10): Space Filling<br>
     __Aim__: Improving sampling of the space – particularly in the vicinity of a promising region. 
     
 The point chosen for the next function evaluation is the most isolated point within a bound search space<br>
-    -- Not attempt to maximise the function at this stage<br>
+    -- No attempt to maximise the function at this stage<br>
     -- The rational is that a surrogate model based on poorly sampled training data will provide unreliable results<br>  
 
 - A convex hull is calculated to find the bounds of the inputs space
@@ -122,3 +122,5 @@ __Phase 2__ (Week 11 - Week 13): Function Maximisation<br>
 - current maximum is found, and all points within a pre-defined distance from that point are extracted
 - Neural Network (NN) is trained on the data set described above 
 - The trained NN is provided with random samples of the domain and returns the coordinates with the maximum output value
+
+This phase is purely exploitative
