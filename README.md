@@ -50,7 +50,7 @@ bbo_project/
         1. _data_loading.py_ 
         2. _data_augmetnation.py_
         3. _data_plotting.py_ 
-        
+
 ## Inputs and Outputs
 
 #### Input Dataset
@@ -65,11 +65,18 @@ The dataset for each function has two components:
 2. Updated Data Points (data/updated_data)
     - Each week new, updated data points are received for each function by e-mail and copied to a csv in the format shown below:
 
-function name   inputs	                            outputs
-function_1	    [X1, X2]                            Y
-function_2	    [X1, X2]                            Y
-:
-function_8	    [X1, X2, X3, X4, X5, X6, X7, X8]    Y 
+
+| Function | Inputs                             | Outputs      |
+|----------|------------------------------------|--------------|
+| F1       | [X1, X2]                           | Y            |
+| F2       | [X1, X2]                           | Y            |
+| F3       | [X1, X2, X3]                       | Y            |
+| F4       | [X1, X2, X3, X4]                   | Y            |
+| F5       | [X1, X2, X3, X4]                   | Y            |
+| F6       | [X1, X2, X3, X4, X5]               | Y            |
+| F7       | [X1, X2, X3, X4, X5, X6]           | Y            |
+| F8       | [X1, X2, X3, X4, X5, X6, X7, X8]   | Y            |
+
 
 These new data points are appended to a function’s initial dataframe by the apply_updates function in the _data_loading.py_ library
 
