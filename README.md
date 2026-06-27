@@ -105,7 +105,7 @@ For example:
 The project has been split into 2 fundamental phases:
 
 __Phase 1__ (Week 1 - Week 10): Space Filling
-    __Aim__: Improving sampling of the space – particularly in the vicinity of a promising region. 
+    <br>__Aim__: Improving sampling of the space – particularly in the vicinity of a promising region. 
     
 The point chosen for the next function evaluation is the most isolated point within a bound search space
     -- Not attempt to maximise the function at this stage
@@ -118,7 +118,7 @@ The point chosen for the next function evaluation is the most isolated point wit
 Exploration and Exploitation are balanced by points that define the convex hull. Initially the convex hull is drawn around all samples (exploring whole domain). As more information became available, the search space was bound by promising regions. This region to was defined with either SVM-derived decision boundary, the distance from a peak, or the points within the upper quartile of output values (exploiting information). 
 
 __Phase 2__ (Week 11 - Week 13): Function Maximisation
-    __Aim__: make use of the sampling achieved in Phase 1 to fit a Neural Network and predict the maximum values
+    <br>__Aim__: make use of the sampling achieved in Phase 1 to fit a Neural Network and predict the maximum values
 
 - current maximum is found, and all points within a pre-defined distance from that point are extracted
 - Neural Network (NN) is trained on the data set described above 
