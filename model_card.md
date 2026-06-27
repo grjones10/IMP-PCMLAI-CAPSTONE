@@ -18,10 +18,11 @@ __Unsuitable__
 The project has been split into 2 fundamental phases:
 
 #### __Phase 1__: Space Filling
-__Aim__: Improving sampling of the space<br>
 
 This phase spanned most of the project and did not aim to find the function's maximum. Rather, it was focused on building the foundations for __phase 2__ by improving the sampling in the region of promise. This was initially very exploratiative <br>
 
+__Aim__: Improving sampling of the space<br>
+__Workflow__:
     1. determine the bounds of the search space
     2. Calculate the convex hull of those bounds 
     3. Use latin hypercube sampling with 1e6 random seeds to sample the whole domain, extract points internal to the convex hull
