@@ -17,8 +17,9 @@ __Unsuitable__
 
 The project has been split into 2 fundamental phases:
 
-__Phase 1__: Space Filling
-- __Aim__: Improving sampling of the space<br>
+#### __Phase 1__: Space Filling
+__Aim__: Improving sampling of the space<br>
+
 This phase spanned most of the project and did not aim to find the function's maximum. Rather, it was focused on building the foundations for __phase 2__ by improving the sampling in the region of promise. This was initially very exploratiative <br>
 
     1. determine the bounds of the search space
@@ -29,8 +30,8 @@ This phase spanned most of the project and did not aim to find the function's ma
 - This phase contains 3x different approaches to bounding the search space for the next query - the __most isolated point__
 
 
-__Phase 2__: Function Maximisation
-- __Aim__: make use of the sampling achieved in Phase 1 to fit a Neural Network and predict the maximum values
+#### __Phase 2__: Function Maximisation
+__Aim__: make use of the sampling achieved in Phase 1 to fit a Neural Network and predict the maximum values
 
 | Project Phase | Objective             | Weeks     | Query Approach                                                                        |
 |---------------|-----------------------|-----------|---------------------------------------------------------------------------------------|
