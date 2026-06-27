@@ -13,9 +13,7 @@ __Unsuitable__
 - ?
 - ?
 
-## Details:
-
-The project has been split into 2 fundamental phases:
+## Details: The project is been split into 2 phases:
 
 #### __Phase 1__: Space Filling
 __Aim__: Improving sampling of the space<br>
