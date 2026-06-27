@@ -6,12 +6,6 @@ Such a process is reverent to the real-world where obtaining additional informat
 
 From a career perspective this project offers the opportunity to better understand principles studied during the course by practically applying them. The experience has provided better appreciation of the benefits and trade-offs of different modelling approaches, and can be directly applied to modelling work in my career.
 
-- The main code for running the optimisation strategy are in jupyter notebook found in notebooks/
-    - This code makes use of three user-defined python libraries
-        1. _data_loading.py_ 
-        2. _data_augmetnation.py_
-        3. _data_plotting.py_ 
-
 #### Repository Structure
 
 ```
@@ -51,7 +45,12 @@ bbo_project/
     ├── data_augmentation.py
     └── data_plotting.py
 ```
-
+- The main code for running the optimisation strategy are in jupyter notebook found in notebooks/
+    - This code makes use of three user-defined python libraries
+        1. _data_loading.py_ 
+        2. _data_augmetnation.py_
+        3. _data_plotting.py_ 
+        
 ## Inputs and Outputs
 
 #### Input Dataset
