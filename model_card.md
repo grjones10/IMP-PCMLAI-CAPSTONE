@@ -1,10 +1,10 @@
-## Overview: 
+## Overview
 
 __Model Name__: Combined Space-Filling and Function Approximation Optimisation<br>
 __Type__: Black-Box Optimisation Workflow enabling both sapce-filling sampling and surrogate modelling<br>
 __Version__: 1.13<br>
 
-## Intended use:
+## Intended use
 
 This codebase is intended for a 
 
@@ -15,7 +15,7 @@ __Unsuitable__
 
 ## Details: 
 
-#### Performance
+### Performance
 
 __Phase 1__ (Week 1 - Week 10): Space Filling<br>
 
@@ -35,7 +35,7 @@ Metrics Used:<br>
     - MLE<br>
     - Modelled Maximum 
 
-#### Assumptions and limitations
+### Assumptions and limitations
 
 __Assumptions__<br>
 
@@ -48,4 +48,4 @@ __Limitations__<br>
  - __NN training data__
  <br>the availability of the training data used for the neural network is very limited. Despite efforts in phase 1 to improve this, the high-dimensional domains remain very coarsely sampled. This limits the accuracy, and generality, of the model used to predict the maximu
 
-#### Ethical considerations
+### Ethical considerations
