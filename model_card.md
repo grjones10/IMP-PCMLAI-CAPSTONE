@@ -18,7 +18,8 @@ __Unsuitable__
 The project has been split into 2 fundamental phases:
 
 __Phase 1__: Space Filling
-- __Aim__: Improving sampling of the space – particularly in the vicinity of a promising region<br>
+- __Aim__: Improving sampling of the space<br>
+- This phase contains 3x different approaches to bounding the search space for the next query - the __most isolated point__
 
 __Phase 2__: Function Maximisation
 - __Aim__: make use of the sampling achieved in Phase 1 to fit a Neural Network and predict the maximum values
