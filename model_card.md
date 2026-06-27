@@ -37,11 +37,11 @@ Metrics Used:<br>
 
 #### Assumptions and limitations
 
-__Assumptions__<br><br>
+__Assumptions__<br>
 
 Bounding the initial search space with the convex hull of the initial data set built in an assumption that the peak would lie within the bounds of the initial data. This can be corrected in future version by adding the capability to bound by the overall domain 
 
-__Limitations__<br><br>
+__Limitations__<br>
 
  - __Peak within initial data bounds assumption___ <br>
  As mentioned above, the assumption of the peak lieing within the initial dataset is a limitation - and found to be false during the project. 
