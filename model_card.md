@@ -23,8 +23,8 @@ Summary of Performance:
 
 Metrics Used:<br>
     - Current Maximum Value<br>
-    - Localisation of Upper Quartile<br>  
-    - Most isolated coordinate<br>
+    - Localisation of Upper Quartile<br>
+    - Most isolated coordinate
 
 __Phase 2__ (Week 11 - Week 13): Function Maximisation<br>
 
@@ -33,7 +33,7 @@ Summary of Performance:
 Metrics Used:<br>
     - Current Maximum Value<br>
     - MLE<br>
-    - Modelled Maximum <br>
+    - Modelled Maximum 
 
 #### Assumptions and limitations
 
