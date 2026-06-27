@@ -13,12 +13,14 @@ __Unsuitable__
 - ?
 - ?
 
-## Details: The project is been split into 2 phases:
+## Details: Project is been split into 2 phases
 
 #### __Phase 1__: Space Filling
 __Aim__: Improving sampling of the space<br>
 
-This phase spanned most of the project and did not aim to find the function's maximum. Rather, it was focused on building the foundations for __phase 2__ by improving the sampling in the region of promise. This was initially very exploratiative 
+- This phase spanned most of the project and did not aim to find the function's maximum. Rather, it was focused on building the foundations for __phase 2__ by improving the sampling in the region of promise. 
+- Initially very exploratiative, with the convex hull defined around all available data points
+- The approach to bounding the search space, and the exploration-exploitation balance, evolved as patterns began to appear in the data
 
 | __Workflow__  |                                                                                                                           | 
 |---------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -27,19 +29,30 @@ This phase spanned most of the project and did not aim to find the function's ma
 | 3.            | Use latin hypercube sampling with 1e6 random seeds to sample the whole domain, extract points internal to the convex hull |
 | 4.            | Find the internal point with the largest distance to all current data points - the __most isolated point__                |
 
-
 - This phase contains 3x different approaches to bounding the search space for the next query - the __most isolated point__
 
 
 #### __Phase 2__: Function Maximisation
-__Aim__: make use of the sampling achieved in Phase 1 to fit a Neural Network and predict the maximum values
+__Aim__: make use of the sampling achieved in Phase 1 to fit a Neural Network (NN) and predict the maximum values<br>
 
-| Project Phase | Objective             | Weeks     | Query Approach                                                                        |
-|---------------|-----------------------|-----------|---------------------------------------------------------------------------------------|
-| 1.1           | Space Filling         | 1 - 2     | __most isolated point__ with space bound by convex hull of _all_ data points          |
-| 1.2           | Space Filling         | 3 - 5     | __most isolated point__ with space bound by convex hull of _promising_ data points    |
-| 1.3           | Space Filling         | 6 - 10    | __most isolated point__ with space bound by convex hull of _promising_ data points    |
-| 2.1           | Function Maximisation | 11 - 13   | __Coordinate of model-approximated function maximum__                                 |
+This phase spanned the final stages was focused making use of the sampling achieved in __phase 1__ to train a neural network on the promising points and find the maximum value of the underlying function 
+
+| __Workflow__  |                                                                                                               | 
+|---------------|---------------------------------------------------------------------------------------------------------------|
+| 1.            | Find the current maximum value                                                                                |
+| 2.            | Define a search radius around that current maximum and extract all points within                              |
+| 3.            | Train an NN on the extracted data points                                                                      |
+| 4.            | Provide the NN with 1e6 random samples of search radius and out the maximum model-approximated function value |
+
+
+#### __Summary__
+
+| Project Phase | Objective             | Weeks     | Query Approach                                                                                            |
+|---------------|-----------------------|-----------|-----------------------------------------------------------------------------------------------------------|
+| 1.1           | Space Filling         | 1 - 2     | __most isolated point__ with space bound by convex hull of _all_ data points                              |
+| 1.2           | Space Filling         | 3 - 5     | __most isolated point__ with space bound by convex hull of _promising_ data points                        |
+| 1.3           | Space Filling         | 6 - 10    | __most isolated point__ with space bound SVM-derived decision boundary or distance from current max value |
+| 2.1           | Function Maximisation | 11 - 13   | __Coordinate of model-approximated function maximum__                                                     |
 
 ### Performance
 
