@@ -96,7 +96,7 @@ __Objective__: Maximise each of the unknown functions
 This objective is constrained by a maximum 13 updated queries per function, and a response delay while each new query is processed. Furthermore - beyond the number of dimensions - nothing is known about the function’s structure. 
 
 For example:<br>
--- Is the maximum within the bounds of the initial data set or not? 
+-- Is the maximum within the bounds of the initial data set or not?<br> 
 -- Is there more than one local maxima? 
 
 ## Technical Approach
@@ -106,9 +106,9 @@ The project has been split into 2 fundamental phases:
 __Phase 1__ (Week 1 - Week 10): Space Filling<br>
     __Aim__: Improving sampling of the space – particularly in the vicinity of a promising region. 
     
-The point chosen for the next function evaluation is the most isolated point within a bound search space
-    -- Not attempt to maximise the function at this stage
-    -- The rational is that a surrogate model based on poorly sampled training data will provide unreliable results  
+The point chosen for the next function evaluation is the most isolated point within a bound search space<br>
+    -- Not attempt to maximise the function at this stage<br>
+    -- The rational is that a surrogate model based on poorly sampled training data will provide unreliable results<br>  
 
 - A convex hull is calculated to find the bounds of the inputs space
 - Random sampling is used to efficiently fill the multi-dimensional convex hull space
