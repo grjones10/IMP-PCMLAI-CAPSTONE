@@ -124,3 +124,8 @@ __Phase 2__ (Week 11 - Week 13): Function Maximisation<br>
 - The trained NN is provided with random samples of the domain and returns the coordinates with the maximum output value
 
 This phase is purely exploitative
+
+## Documentation
+
+- [Datasheet](datasheet.md)
+- [Model Card](model_card.md)
