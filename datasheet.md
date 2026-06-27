@@ -1,5 +1,5 @@
 ## Motivation
-__objective__: Find the maximum of unknown mathmatical functions. 
+__objective__: Find the maximum of unknown mathmatical functions<br>
 This dataset was generated as part of a Black-Box Optimisation task for Imperial College London's _Professional Certificate in Machine Learning and AI Capstone Project_. 
 
 ## Composition
