@@ -68,14 +68,14 @@ The dataset for each function has two components:
 
 | Function | Inputs                             | Outputs      |
 |----------|------------------------------------|--------------|
-| F1       | [X1, X2]                           | Y            |
-| F2       | [X1, X2]                           | Y            |
-| F3       | [X1, X2, X3]                       | Y            |
-| F4       | [X1, X2, X3, X4]                   | Y            |
-| F5       | [X1, X2, X3, X4]                   | Y            |
-| F6       | [X1, X2, X3, X4, X5]               | Y            |
-| F7       | [X1, X2, X3, X4, X5, X6]           | Y            |
-| F8       | [X1, X2, X3, X4, X5, X6, X7, X8]   | Y            |
+| F1       | [X1, X2]                           | Y1           |
+| F2       | [X1, X2]                           | Y1           |
+| F3       | [X1, X2, X3]                       | Y1           |
+| F4       | [X1, X2, X3, X4]                   | Y1           |
+| F5       | [X1, X2, X3, X4]                   | Y1           |
+| F6       | [X1, X2, X3, X4, X5]               | Y1           |
+| F7       | [X1, X2, X3, X4, X5, X6]           | Y1           |
+| F8       | [X1, X2, X3, X4, X5, X6, X7, X8]   | Y1           |
 
 
 These new data points are appended to a function’s initial dataframe by the apply_updates function in the _data_loading.py_ library
