@@ -1,10 +1,11 @@
 ## Motivation
-
-This dataset was generated for Imperial College London's Professional Certificate in Machine Learning and AI Capstone Project. This was a Black-box Optimisation task, where the objective is obtaining a model that approximates unknown functions and return their maximum value. To achieve an acceptable model approximation, the dataset focuses largely on improving sampling around regions of promise rather than finding the maximum value. Only the last 3 data points for each function were focused on finding the maximum - i.e. evaluating the trained model   
+__objective__: Find the maximum of unknown mathmatical functions. 
+This dataset was generated as part of a Black-Box Optimisation task for Imperial College London's _Professional Certificate in Machine Learning and AI Capstone Project_. 
 
 ## Composition
+  
  There are 8 different datasets within corresponding to 8 different functions (F1, F2, ..., F8)
- - The datasets for each function are composed of initially provided data points, and the queries requested during the project. These are distinguish with a binary "new_point" channel in the dataframe when loading the data.
+ - The datasets for each function are composed of initially provided data points, and the queries requested during the project. These are distinguished with a binary "new_point" channel in the dataframe when loading the data
     <br> -- original datasets are store in their original .npy format and parsed into a dataframe using the data_loading library
     <br> -- new data points are stored as weekly .csv files in the results folder and parsed into the dataframe using the data_loading library
  - data is stored as floating point numbers to 6 decimal places
@@ -26,7 +27,7 @@ This dataset was generated for Imperial College London's Professional Certificat
 Each function was queried once a week, following evaluation of the available data up to that point. The coordinate of each query was determined by the code related to that phase of the strategy. 
 
 <br> -- Phase 1: Queries were the most isolated point within a bound search space. The space was bound by regions of promise - and SVM-derived decision boundary, distance from a peak or samples in the upper quartile of outputs
-<br> -- Phase 2: Queries were a Neural Networks approximation of maximum values  
+<br> -- Phase 2: Queries were a Neural Networks approximation of maximum values
 
 ## Preprocessing and uses
 
