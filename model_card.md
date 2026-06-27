@@ -15,12 +15,12 @@ __Unsuitable__
 
 ## Details: 
 
-| Project Phase | Objective             | Weeks | Approach  |
-|---------------|-----------------------|-------|-----------|
-| 1.1           | Space Filling         | Y1    |           |
-| 1.2           | Space Filling         | Y1    |           |
-| 1.3           | Space Filling         | Y1    |           |
-| 2.1           | Function Maximisation | Y1    |           |
+| Project Phase | Objective             | Weeks     | Query Approach                                                                        |
+|---------------|-----------------------|-----------|---------------------------------------------------------------------------------------|
+| 1.1           | Space Filling         | 1 - 2     | __most isolated point__ with space bound by convex hull of _all_ data points          |
+| 1.2           | Space Filling         | 3 - 5     | __most isolated point__ with space bound by convex hull of _promising_ data points    |
+| 1.3           | Space Filling         | 6 - 10    | __most isolated point__ with space bound by convex hull of _promising_ data points    |
+| 2.1           | Function Maximisation | 11 - 13   | __Coordinate of model-approximated function maximum__                                 |
 
 ### Performance
 
