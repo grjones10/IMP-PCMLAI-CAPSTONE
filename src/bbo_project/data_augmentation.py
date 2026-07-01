@@ -462,11 +462,11 @@ def extract_distance_from_max(df, variable, input_cols, min_points):
 
     input_points = df[input_cols].values.astype(float)
 
-    r = 0.1
+    r = 0.25
     num_points_inside = 0
 
     if len(input_cols) <= 4:
-        while num_points_inside < min_points:
+        while num_points_inside < np.ceil(min_points*1.2):
             r += 0.02
             distances = np.linalg.norm(input_points - center, axis=1)
 
@@ -476,7 +476,7 @@ def extract_distance_from_max(df, variable, input_cols, min_points):
             region_of_interest = df.loc[inside_mask].copy()
             num_points_inside = len(region_of_interest)
     else:
-        while num_points_inside < (len(input_cols)*2):
+        while num_points_inside < np.ceil(len(input_cols)*2*1.2):
 
             r += 0.02
             distances = np.linalg.norm(input_points - center, axis=1)

@@ -53,11 +53,14 @@ __Aim__: make use of the sampling achieved in Phase 1 to fit a Neural Network (N
 
 ### Performance
 
+![Summary of week-by-week progress](results/plots/summary.png)
+
 __Phase 1__ (Week 1 - Week 10): Space Filling<br>
 
 Summary of Performance:
 
-- Sampling 
+- Limited progress in increasing maximum query values  
+- Target was sampling improvement. This focused initally on exploring the space withing the sample domain before exploiting regions of promise  
 
 Metrics Used:<br>
     - Current Maximum Value<br>

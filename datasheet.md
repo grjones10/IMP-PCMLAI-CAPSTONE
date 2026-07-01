@@ -1,5 +1,5 @@
 ## Motivation
-__Pbjective__: Find the maximum of unknown mathmatical functions<br><br>
+__Objective__: Find the maximum of unknown mathmatical functions<br><br>
 This dataset was generated as part of a Black-Box Optimisation task for Imperial College London's _Professional Certificate in Machine Learning and AI Capstone Project_. 
 
 ## Composition
@@ -13,14 +13,14 @@ This dataset was generated as part of a Black-Box Optimisation task for Imperial
 | Data Table                                                           |
 | Function | Dimensions | Number of Points | Max Value | Min Value     |
 |----------|-----------|---------------|---------------|---------------|
-| F1       | 2D        | 20            | 0.037891      | -0.006092     |
+| F1       | 2D        | 20            | 0.044896      | -0.006092     |
 | F2       | 2D        | 20            | 0.666604      | -0.132547     |
-| F3       | 3D        | 25            | 0.006003      | -0.398926     |
-| F4       | 4D        | 40            | -3.810608     | -32.625660    |
+| F3       | 3D        | 25            | -0.006003     | -0.398926     |
+| F4       | 4D        | 40            | -1.998845     | -32.625660    |
 | F5       | 4D        | 28            | 4170.668432   | 0.112940      | 
 | F6       | 5D        | 30            | -0.499612     | -2.571170     |
-| F7       | 6D        | 39            | 1.869530      | 0.002701      |  
-| F8       | 8D        | 50            | 9.833484      | 5.592193      | 
+| F7       | 6D        | 39            | 2.214771     | 0.002701      |  
+| F8       | 8D        | 50            | 9.892159      | 5.592193      | 
 
 ## Collection process
 
