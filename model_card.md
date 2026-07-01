@@ -59,8 +59,9 @@ __Phase 1__ (Week 1 - Week 10): Space Filling<br>
 
 Summary of Performance:
 
-- Limited progress in increasing maximum query values  
-- Target was sampling improvement. This focused initally on exploring the space withing the sample domain before exploiting regions of promise  
+- Most function showed little-to-no progress in the early weeks as objective was exploration
+- Small improvements towards the end of the phase as the regions of promise were more exploited  
+- Target was sampling improvement though so increases in each function's maximum remained modest  
 
 Metrics Used:<br>
     - Current Maximum Value<br>
@@ -71,7 +72,9 @@ __Phase 2__ (Week 11 - Week 13): Function Maximisation<br>
 
 Summary of Performance:
 
-- 
+- Aim was now to find the function maximum and all functions, except F2, F3 and F6 improved in this phase
+- The functions that did not needed more work on the NN
+
 
 Metrics Used:<br>
     - Current Maximum Value<br>
